@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>day15_fileUploadAndDownload</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>FileUploadDemo</display-name>
+    <servlet-name>FileUploadDemo</servlet-name>
+    <servlet-class>com.atguigu.demo.FileUploadDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FileUploadDemo</servlet-name>
+    <url-pattern>/FileUploadDemo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FileDownLoadDemo</display-name>
+    <servlet-name>FileDownLoadDemo</servlet-name>
+    <servlet-class>com.atguigu.demo.FileDownLoadDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FileDownLoadDemo</servlet-name>
+    <url-pattern>/FileDownLoadDemo</url-pattern>
+  </servlet-mapping>
+</web-app>
